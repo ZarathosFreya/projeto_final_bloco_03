@@ -49,14 +49,14 @@ function FormCategoria() {
         if (id !== undefined) {
             try {
                 await atualizar(`/categorias`, categorias, setCategorias)
-                alert('A categoria foi atualizado com sucesso!')
+                alert('A categoria foi atualizada com sucesso!')
             } catch (error: any) {
                 alert('Erro ao atualizar a categoria.')
             }
         } else {
             try {
                 await cadastrar(`/categorias`, categorias, setCategorias)
-                alert('O Tema foi cadastrado com sucesso!')
+                alert('A categoria foi cadastrado com sucesso!')
             } catch (error: any) {
                 alert('Erro ao cadastrar categoria')
             }
@@ -77,7 +77,7 @@ function FormCategoria() {
                     <label htmlFor="tipo">Tipo da categoria</label>
                     <input
                         type="text"
-                        placeholder="Descreva aqui seu tema"
+                        placeholder="Descreva aqui sua categoria"
                         name='tipo'
                         className="border-2 border-slate-700 rounded p-2"
                         value={categorias.nome}

@@ -15,7 +15,7 @@ function ListaCategoria() {
         try {
             await buscar(`/categorias/`, setCategorias); 
         } catch (error: any) {
-            alert('Erro ao buscar temas');
+            alert('Erro ao buscar categoria');
         }
     }
 
